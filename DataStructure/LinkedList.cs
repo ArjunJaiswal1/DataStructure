@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace DataStructure
 {
     public class LinkedList
     {
         internal Node head;
-        internal void Add(int data)
+
+        internal void Appending(int data)
         {
             Node node = new Node(data);
             if (this.head == null)
@@ -41,22 +41,5 @@ namespace DataStructure
                 temp = temp.next;
             }
         }
-        internal void AddReverse(int data)
-        {
-            Node node = new Node(data);
-            if (this.head == null)
-            {
-                this.head = node;
-            }
-            else
-            {
-                Node temp = head;
-                head = node;
-                head.next = temp;
-            }
-            Console.WriteLine("{0} inserted into linked list", node.data);
-        }
     }
 }
-
-    
