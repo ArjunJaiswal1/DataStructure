@@ -20,9 +20,10 @@ namespace DataStructure
             //list.Appending(56);
             //list.Appending(30);
             //list.Appending(70);
+            list.Add(56);
             list.Add(30);
             list.Add(70);
-            list.RemoveFirstNode();
+            list.RemoveLastNode();
             Console.WriteLine("After removing is : ");
             list.Display();
             
