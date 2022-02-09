@@ -17,11 +17,12 @@ namespace DataStructure
            // list.AddReverse(70);
             //list.AddReverse(30);
             //list.AddReverse(56);
-            list.Appending(56);
-            list.Appending(30);
-            list.Appending(70);
+            //list.Appending(56);
+            //list.Appending(30);
+            //list.Appending(70);
             Console.WriteLine("Display Nodes are");
             list.Display();
+            list.InsertAtParticularPosition(2, 30);
             Console.WriteLine("========================================================================================");
             Console.ReadLine();
         }
