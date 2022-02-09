@@ -8,23 +8,24 @@ namespace DataStructure
         {
             Console.WriteLine("==========Welcome To Data Structure Programs==========");
 
-            Console.WriteLine("SEARCH OPERATIONS !");
+            Console.WriteLine("Search Operations !");
             LinkedList list = new LinkedList();
             //list.Add(56);
             //list.Add(30);
             //list.Add(70);
-            
-           // list.AddReverse(70);
+
+            // list.AddReverse(70);
             //list.AddReverse(30);
             //list.AddReverse(56);
             //list.Appending(56);
             //list.Appending(30);
             //list.Appending(70);
-            Console.WriteLine("Display Nodes are");
+            list.Add(30);
+            list.Add(70);
+            list.RemoveFirstNode();
+            Console.WriteLine("After removing is : ");
             list.Display();
-            list.InsertAtParticularPosition(2, 30);
-            Console.WriteLine("========================================================================================");
-            Console.ReadLine();
+            
         }
     }
 }
