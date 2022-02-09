@@ -22,10 +22,12 @@ namespace DataStructure
             //list.Appending(70);
             list.Add(56);
             list.Add(30);
+            list.Add(40);
             list.Add(70);
-            int position = list.Search(30);
-            position++;
-            list.InsertAtParticularPosition(position, 40);
+            int position = list.Search(40);
+            list.DeleteNodeAtParticularPosition(position);
+            Console.WriteLine("\nAfter deleting 40 then Size and final sequence is: ");
+            list.Size();
             list.Display();
 
         }
